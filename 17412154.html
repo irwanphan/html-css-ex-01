@@ -14,6 +14,7 @@
 		position: fixed;
 		top: 0;
 		width: 100%; 
+		background-color: rgba(255,255,255,0.8);
 	}
 
 	nav ul {
@@ -26,6 +27,11 @@
 		list-style: none;
 		display: inline-block;
 		padding: 8px 16px 8px 16px;
+	}
+
+	nav li a {
+		text-decoration: none;
+		color: #ff5800;
 	}
 
 	.container {
@@ -68,10 +74,33 @@
 		text-align: center;
 	}
 
+	#course, #about, #contact {
+		padding: 40px 0px 40px 0px;
+	}
+
 	#course article {
 		width: 33.33%;
 		padding: 16px;
 		display: table-cell;
+	}
+
+	#about {
+		text-align: center;
+	}
+
+	#about .identitas{
+		color: tomato;
+	}
+
+	footer {
+		background-color: royalblue;
+		height: 120px;
+		text-align: center;
+		padding: 32px 0px 32px 0px;
+	}
+
+	footer p {
+		color: azure;
 	}
 </style>
 <body>
@@ -114,35 +143,37 @@
 			</div>
 			<div id="about">
 				<h2>Tentang Saya</h2>
-				<span>Ivan Steven 17412154</span>
+				<span class="identitas" style="font-size: 18px;">
+					<strong>Ivan Steven 17412154</strong>
+				</span>
 				<p>
 					Saya lahir di Pontianak dan sedang kuliah juga di Universitas Widya Dharma.
 					Saya mempunyai keterampilan dalam bidang Desain Grafis dan Fotografi.
 					Saya pernah juga ikut berpartisipasi dalam lomba Desain Grafis dan Fotografi pada saat saya duduk di bangku SMK.
 				</p>
 				<h2>Hubungi Saya</h2>
-				<span>Email : ivansteven10@gmail.com</span>
-				<span>Mobile : +628xxxxxxxxxx</span>
-				<span>Jl. xxx Komp. xxx No. xxx</span>
+				<span class="identitas" style="display: block;">Email : ivansteven10@gmail.com</span>
+				<span class="identitas" style="display: block;">Mobile : +628xxxxxxxxxx</span>
+				<span class="identitas" style="display: block;">Jl. xxx Komp. xxx No. xxx</span>
 			</div>
 			<div id="contact">
 				<h2>Kirim Pesan ke Saya</h2>
 				<form method="POST">
 					<label>Nama</label>
-					<input type="text" id="ivan" name="ivan">
+					<input type="text" id="ivan" name="ivan" placeholder="Nama Lengkap" style="display: block;" required>
 
 					<label>Email</label>
-					<input type="email" id="email" name="email">
+					<input type="email" id="email" name="email" placeholder="example@gmail.com" style="display: block;" required>
 
 					<label>Message</label>
-					<textarea id="message" name="message"></textarea>
+					<textarea id="message" name="message" placeholder="Write message here.." style="display: block;" required></textarea>
 
 					<button>Kirim</button>
 				</form>
 			</div>
 		</div>
 	<footer>
-		Copyright hari ini, sebuah pencapaian kecil
+		<p>Copyright hari ini, sebuah pencapaian kecil</p>
 	</footer>
 </body>
 </html>
