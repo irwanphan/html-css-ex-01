@@ -106,7 +106,7 @@
 			padding : 40px 0px;
 		}
 
-		input[type=text] {
+		input[type=text],input[type=email] {
 			width: 100%;
 			padding: 12px 20px;
 			margin: 8px 0;			
@@ -187,9 +187,9 @@
  			<div id="contact">
  				<h2>Kirim Pesan ke Saya</h2>
  				<form method="POST" action="#">
- 					<label for="nama"> Nama <input type="Text" name="nama" id="nama" placeholder="Nama"> </label>
- 					<label for="email"> Email <input type="Text" name="email" id="email" placeholder="Email"> </label>
- 					<label for="message"> Message <textarea name="message" id="message" placeholder="Message"></textarea> </label>
+ 					<label for="nama"> Nama <input type="Text" name="nama" id="nama" placeholder="Nama" required> </label>
+ 					<label for="email"> Email <input type="Email" name="email" id="email" placeholder="Email" required> </label>
+ 					<label for="message"> Message <textarea name="message" id="message" placeholder="Message (Min. 200 Character)" minlength="200" required></textarea> </label>
  					<button type="submit">Kirim</button>	
  				</form>
  			</div>		
