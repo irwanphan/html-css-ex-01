@@ -1,7 +1,210 @@
 <!-- agar browser dapat merender dengan benar, perlu ditentukan doctype yang digunakan -->
-
+<!doctype HTML>
 <!-- buatlah element html -->
+<html>
+		<head>
+			<META charset="UTF-8">
+			<title>ngoding itu ga sulit</title>
+		</head>
 
+		<style>
+			
+
+			body{
+				font-family: "century gothic","segoe UI","Tahoma","Geneva";
+				margin: 0px;
+				padding: 0px;
+			}
+
+			nav{
+				text-align:center;
+				position: fixed;
+				top: 0px;
+				width: 100%;
+				background-color: rgba(255,255, 255,0.8);
+				z-index: 3;
+			}
+
+			nav ul{
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+
+			nav ul li {
+				display: inline-block;
+				padding: 8px 16px;
+				text-decoration: none;
+				color: #ff5800;
+			}
+
+			nav ul li a{
+				text-decoration: none;
+				color: #ff5800;
+			}
+
+			.container{
+				max-width: 840px;
+				margin-left:  auto;
+				margin-right: auto;
+				
+			}
+
+			DIV #Hello{
+				height: 480px;
+				background-color:deepskyblue;
+				
+			}
+
+			.banner{
+				overflow: hidden;
+				height: 100%;
+				position: relative;
+			}
+
+			small{
+				position: absolute;
+				left: 16px;
+				bottom: 16px;
+				color: ghostwhite;
+				z-index: 5;
+			}
+
+			.banner h1{
+				color:white;
+				background-color: rgba(0,0,0,0.7);
+				padding: 16px 32px;
+				display: inline-block;
+				position: absolute;
+				bottom: 60px;
+				z-index: 5;
+			}
+
+			#wrapper h2{
+				text-align: center;
+			}
+
+			#course article{
+				width: 33.33%;
+				padding: 16px;
+				display: table-cell;
+			}
+
+			#about{
+				text-align: center;
+			}
+
+			.identitas{
+				color:tomato;
+				font-size: 18px;
+				font-weight: bold;
+			}
+
+			#about span{
+				display: block;
+			}
+
+			#course,#about,#contact{
+				padding: 40px 0px;
+			}
+
+			input[type=text]{
+				width: 100%;
+				padding: 12px 20px;
+				margin: 8px 0;
+				border: 1px solid grey;
+				border-radius: 10px;
+			}
+
+			textarea{
+				width: 100%;
+				padding: 12px 20px;
+				margin: 8px 0;
+				border: 1px solid grey;
+				border-radius: 10px;
+			}
+
+			button{
+				background-color: #c0baba;
+				color: black;
+				width: 105%;
+				padding: 10px 40px;
+				border-radius: 10px;
+			}
+
+			footer{
+				background-color:royalblue;
+				height: 120px;
+				text-align: center;
+				padding: 32px 0px;
+				color:azure;
+			}
+		</style>
+		<body>
+			
+			<nav>
+				<ul>
+					<li><a href ="#hello">Hello</a></li>
+					<li><a href ="#course">Course</a></li>
+					<li><a href ="#about">About</a></li>
+					<li><a href ="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		
+			<div class="container" id="wrapper">
+				<div id="hello">
+					<div class="banner">
+						<h1>Ngoding itu ga susah</h1>
+						<img src="assets/banner.jpg" alt="Gambar Latar">
+						<small>*perlu dibiasakan aja</small>
+					</div>
+				</div>
+
+				<div id="course">
+					<h2>Course yang telah diselesaikan</h2>
+						<article>
+							<h3>machine learning</h3>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis facere aut, at, distinctio nesciunt sequi delectus, quas molestiae nisi accusamus asperiores praesentium aperiam sint qui iusto facilis! Possimus, consectetur earum!</p>
+						</article>
+						<article>
+							<h3>predictive analysis</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus impedit quam eveniet. At reprehenderit animi vero, debitis consequatur in quam veritatis, ipsam praesentium, minus perferendis obcaecati? Ratione dolores fugit nam.</p>
+						</article>
+						<article>
+							<h3>inclusive design pattern</h3>
+							<P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, eos veritatis recusandae, vitae mollitia aspernatur quis nesciunt incidunt culpa explicabo accusamus asperiores reprehenderit, officiis quos deleniti unde illum aut suscipit?</P>
+						</article>
+				</div>
+
+				<div id="about">
+					<h2>Tentang Saya</h2>
+					<span class="identitas">Andhika Prangestu,17412131</span>
+					<p>Nama Saya Andhika Prangestu Saya lahir di pontianak pada tanggal 17 mei 1999.Sekarang umur 
+						saya 21 tahun saya sekarang membantu orang tua saya di rumah, Ayah saya  adalah seorang wirausaha dan ibu 
+						saya seorang ibu rumah tangga saya adalah anak ke-3 dari 4 bersaudara,Saya sekarang berkuliah di Universitas Widya Dharma dengan Jurusan 
+						Sistem Informasi Sekarang saya berada di semester 6,sekian dan terima kasih.Emial:Andhika.prangestu@gmail.com 
+						telp:+6281395322497 Alamat:Jalan merapi no 197. </p>
+					<h2>Hubungi Saya</h2>
+					<span>Email:Andhika.prangestu@gmail.com</span>
+					<span>Telp:+6281395322497</span>
+					<span>Alamat:Jalan Merapi No.197</span>
+				</div>
+
+				<div id="contact">
+					<h2>Kirim Pesan Ke Saya</h2>
+					<form method="POST" action="#">
+							<label for="nama"><input type="text" name="nama" id="nama" placeholder="Nama"> </label>
+							<label for="email"><input type="text" name="email" id="email" placeholder="Email"> </label>
+							<label for="message"><textarea name="message" id="message" placeholder="Message"></textarea></label>
+							<button type="submit">Kirim</button>
+					</form>
+				</div>
+			</div>
+			<footer>
+				<p>copyright hari ini, sebuah pencapaian kecil</p>
+			</footer>
+		</body>
+</html>
 <!-- 
     suatu html harus memiliki bagian head untuk menyimpan metadata
     dan informasi yang dapat dibaca oleh mesin
@@ -26,12 +229,13 @@
     sampai di sini kita memiliki menu navigasi dengan 4 link
  -->
 
+ 	
 <!-- 
     untuk menampung konten pada halaman, ada baiknya menggunakan suatu div
     div ini berfungsi sebagai wrapper utama pada konten
     - kita akan membuat div dengan nama class "container" dan id "wrapper"
  -->
-
+		
 <!-- 
     di dalam .container, kita akan mengisinya dengan 4 element div
     - element pertama diberikan id "hello"
@@ -240,7 +444,6 @@
 	akan kita beri nilai "none"
 	kemudian beri warna "#ff5800" pada linknya
 -->
-
  <!--
 	 apabila ada yang janggal dalam design, perhatikan box model default 
 	 dan margin default pada body
