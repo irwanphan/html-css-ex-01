@@ -15,12 +15,13 @@
 		top: 0;
 		width: 100%; 
 		background-color: rgba(255,255,255,0.8);
+		z-index: 3;
 	}
 
 	nav ul {
 		padding: 0;
 		margin: 0;
-		z-index: 2;
+		
 	}
 
 	nav li {
@@ -67,7 +68,7 @@
 		padding: 16px 32px 16px 32px;
 		display: inline-block;
 		position: absolute;
-		margin-bottom: 60px;
+		margin: 360px 0px 60px 0px;
 	}
 
 	#wrapper h2 {
@@ -90,6 +91,19 @@
 
 	#about .identitas{
 		color: tomato;
+	}
+
+	form input, form textarea, form button {
+		width: 100%;
+		padding: 20px;
+		margin: 10px 0px 10px 0px;
+	}
+
+	form button {
+		background-color: royalblue;
+		border: 0px;
+		color: azure;
+		font-size: 15px;
 	}
 
 	footer {
@@ -168,7 +182,7 @@
 					<label>Message</label>
 					<textarea id="message" name="message" placeholder="Write message here.." style="display: block;" required></textarea>
 
-					<button>Kirim</button>
+					<center><button>KIRIM</button></center>
 				</form>
 			</div>
 		</div>
