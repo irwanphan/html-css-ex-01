@@ -13,14 +13,164 @@
     - agar suatu halaman memiliki judul, kita memerlukan element title
     - isi judul/title page dengan "ngoding itu ga sulit"
 -->
-<head>
+	<head>
 		<meta charset="UTF-8">
 		<title> Ngoding Itu Ga sulit </title>
 	</head>
 	
-<!-- 
-    element body memuat segala informasi yang terlihat/visible pada browser
- -->
+	<style>
+	
+		body{
+			box-sizing: border-box;
+		}
+
+		
+		body{
+			font-family: "Century Gothic","segoe UI", "Tahoma", "Geneva";
+			margin: 0px;
+			padding: 0px;
+		}
+
+		
+		nav{
+			text-align: center;
+			position: fixed;
+			top: 0px;
+			background-color: rgba(255,255,255,0.9);
+			width: 100%;
+			z-index: 3;
+		}
+
+		
+		nav ul{
+			list-style: none;			
+			margin : 0;
+			padding : 0;	
+		}
+
+		
+		nav ul li{
+			display: inline-block;
+			padding: 8px 16px;			
+			text-decoration: none;
+			color: #ff5800;
+		}
+
+		
+		nav ul li a{							
+			text-decoration: none;
+			color: #ff5800;
+		}
+
+		.container{
+			max-width: 840px;
+			margin : 0px auto;			
+		}
+
+		
+		div #hello{
+			background-color: deepskyblue;
+			height: 480px;			
+		}
+
+		
+		.banner{
+			overflow: hidden;
+			height: 100%;
+			position: relative;
+		}
+
+		
+		small{
+			position: absolute;
+			left: 16px;
+			bottom: 16px;
+			color : ghostwhite;
+			z-index: 3;
+		}
+
+		
+		.banner h1{
+			color : white;
+			background-color: rgba(0,0,0,0.7);
+			padding: 16px 32px;
+			display: inline-block;
+			position: absolute;
+			bottom: 60px;
+			z-index: 3;
+		}
+
+		
+		#wrapper h2{
+			text-align: center;			
+		}
+
+		
+		#course article{
+			width: 33.33%;					
+			padding: 16px;
+			display: table-cell;
+		}
+
+		
+		#about{
+			text-align: center;
+		}
+
+		
+		.identitas{
+			color: tomato;
+			font-size: 18px;
+		}
+
+		#about span{
+			display: block;
+		}
+
+		
+		#course,#about,#contact{
+			padding : 40px 0px;
+		}
+
+		
+		input[type=text],input[type=email] {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;			
+			border: 2px solid grey;	
+			border-radius: 4px;
+		}
+
+		
+		textarea{
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;		
+			border: 2px solid grey;	
+			border-radius: 4px;	
+		}
+
+		
+		button{
+			background-color: #e7e7e7;
+			color: black;
+			width: 100%;
+			padding: 10px 40px;
+			border-radius: 5px;
+		}
+
+		
+		footer{
+			background-color: royalblue;
+			height: 120px;
+			text-align: center;
+			padding : 32px 0px;
+			color: azure;
+		}
+
+
+	</style>
+	
 		<body>
 <!-- 
     kita akan membuat menu navigasi dengan element nav <nav>
@@ -121,15 +271,17 @@
 	- terdapat header <h2> berisi "hubungi saya"
 	- terdapat 3 elemen span, dengan masing-masing berisi email, no contact, dan alamat
 -->
-<div id="about">
+			<div id="about">
  				<h2>Tentang Saya</h2>
  				<span class="identitas"><b>Dody Afrizal Kurniawan (17412142)</b></span>
- 				<p>salam sejahtera bagi kita semua, nama saya Dody Afrizal Kurniawan.. saya adalah salah satu mahasiswa di Universitas Widya Dharma Pontianak. sehari hari saya bekerja sebagai seorang guru musik.. saya mengajar private keyboard musik, mengajar ekskul keyboard musik anak TK di Persekolahan Kalam Kudus purnama.. saya juga seorang youtuber pemula.. Nama Channel saya adalah Notes Music.. kalian bisa mengunjungi channel saya dengan mengetik URL : www.youtube.com/notesmusic. <br>
-				<br> selain daripada mengajar musik, saya adalah seorang desainer lepas.. saya menerima jasa desain dan cetak di berbagai media seperti spanduk, mug, stiker, gantungan kunci, buku, poster, dan masih banyak lagi.. <br>
+ 				<p>Salam sejahtera bagi kita semua, nama saya Dody Afrizal Kurniawan.. saya adalah salah satu mahasiswa di Universitas Widya Dharma Pontianak. 
+				sehari hari saya bekerja sebagai seorang guru musik.. saya mengajar private keyboard musik, mengajar ekskul keyboard musik anak TK di Persekolahan Kalam Kudus purnama.. 
+				saya juga seorang youtuber pemula.. Nama Channel saya adalah Notes Music.. kalian bisa mengunjungi channel saya dengan mengetik URL : www.youtube.com/notesmusic. <br>
+				<br> Selain daripada mengajar musik, saya adalah seorang desainer lepas.. saya menerima jasa desain dan cetak di berbagai media seperti spanduk, mug, stiker, gantungan kunci, buku, poster, dan masih banyak lagi.. <br>
 				<center>
-				<h2>jika ingin menghubungi saya, bisa contact saya di </h1>
-				<h2>email : Kamillelim**@gmail.com </h1>
-				<h2>kontak WA 0896-5866-****</h1>
+				<h2>Jika ingin menghubungi saya, bisa contact saya di </h1>
+				<h2>Email : Kamillelim**@gmail.com </h1>
+				<h2>Kontak WA 0896-5866-****</h1>
 				<h2>Alamat : Jl. Purnama</h1>
 				</center>
 				</p>
@@ -161,7 +313,7 @@
 -->
 
 <footer>
- 			<p>copyright hari ini, sebuah pencapaian kecil</p>
+ 			<p>Copyright Hari Ini, Sebuah Pencapaian Kecil</p>
  		</footer>
 	</body>
 
