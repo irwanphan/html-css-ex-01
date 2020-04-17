@@ -113,7 +113,7 @@
 			color: azure;
 		}
 
-		input[type=text] {
+		input[type=text],input[type=email] {
 			width: 100%;
 			padding: 12px 20px;
 			margin: 8px	0;
@@ -188,10 +188,10 @@
 
 					<div id="contact">
 						<h2>Kirim Pesan Ke Saya</h2>
-						<form action="/submit-pesan" method="POST">
-							<label for="nama">Nama<input type="text" name="nama" id="nama" placeholder="Nama"></label>
-							<label for="email">Email<input type="text" name="email" id="email" placeholder="Email"></label>
-							<label for="message">Message<textarea name="message" id="message" placeholder="Message"></textarea></label>
+						<form action="#" method="POST">
+							<label for="nama">Nama<input type="text" name="nama" id="nama" placeholder="Nama" required></label>
+							<label for="email">Email<input type="email" name="email" id="email" placeholder="Email" required></label>
+							<label for="message">Message<textarea name="message" id="message" placeholder="Message" required></textarea></label>
 							<button type="submit">Kirim</button>
 						</form>
 					</div>	
