@@ -1,3 +1,167 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Ngoding Itu Ga sulit</title>
+	</head>
+
+
+	<style>
+		body{font-family: "Century Gothic","segoe UI", "Tahoma", "Geneva";
+			 margin: 0px;
+			 padding: 0px;}
+
+		nav{text-align: center;
+			position: fixed;
+			top: 0px;
+			background-color: rgba(255,255,255,0.8);
+			width: 100%;
+			z-index: 3;}
+
+		nav ul{list-style: none;			
+			   margin : 0;
+			   padding : 0;}
+
+		nav ul li{display: inline-block;
+				  padding: 8px 16px;			
+				  text-decoration: none;
+				  color: #ff5800;}
+
+		nav ul li a{text-decoration: none;
+					color: #ff5800;}
+
+		.container{max-width: 840px;
+				   margin : 0px auto;}
+
+		div #hello{background-color: deepskyblue;
+				   height: 480px;}
+
+		.banner{overflow: hidden;
+				height: 100%;
+				position: relative;}
+
+		small{position: absolute;
+			  left: 16px;
+			  bottom: 16px;
+			  color : ghostwhite;
+			  z-index: 3;}
+
+		.banner h1{color : white;
+				   background-color: rgba(0,0,0,0.7);
+				   padding: 16px 32px;
+				   display: inline-block;
+				   position: absolute;
+				   bottom: 60px;
+				   z-index: 3;}
+
+		#wrapper h2{text-align: center;}
+
+		#course article{width: 33.33%;					
+						padding: 16px;
+						display: table-cell;}
+
+		#about{text-align: center;}
+
+		.identitas{color: tomato;
+				   font-size: 18px;}
+
+		#about span{display: block;}
+
+		#course,#about,#contact{padding : 40px 0px;}
+
+		input[type=text],input[type=email] {width: 100%;
+											padding: 12px 20px;
+											margin: 8px 0;
+											border: 2px solid grey;
+											border-radius: 4px;}
+
+		textarea{width: 100%;
+				 padding: 12px 20px;
+				 margin: 8px 0;
+				 border: 2px solid grey;
+				 border-radius: 4px;}
+
+		button{background-color: #e7e7e7;
+			   color: black;
+			   width: 100%;
+			   padding: 10px 40px;
+			   border-radius: 5px;}
+
+		footer{background-color: royalblue;
+			   height: 120px;
+			   text-align: center;
+			   padding : 32px 0px;
+			   color: azure;}
+
+
+	</style>
+		<body>
+		
+			<header>
+				<nav>
+					<ul>
+						<li><a href="#hello"> Hello </a></li>
+						<li><a href="#course"> Course </a></li>
+						<li><a href="#about"> About </a></li>
+						<li><a href="#contact"> Contact </a></li>
+					</ul>
+				</nav>
+			</header>
+			<div class="container" id="wrapper">
+				<div id="hello">
+					<div class="banner">
+						<h1>Ngoding itu ga susah</h1>
+						<img src="assets/banner.jpg" alt="Gambar Latar">
+						<small>*perlu dibiasakan aja</small>
+					</div>
+				</div>
+
+				<div id="course">
+					<h2>Course yang telah diselesaikan</h2>
+						<article>
+							<h3>machine learning</h3>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis facere aut, at, distinctio nesciunt sequi delectus, quas molestiae nisi accusamus asperiores praesentium aperiam sint qui iusto facilis! Possimus, consectetur earum!</p>
+						</article>
+						<article>
+							<h3>predictive analysis</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus impedit quam eveniet. At reprehenderit animi vero, debitis consequatur in quam veritatis, ipsam praesentium, minus perferendis obcaecati? Ratione dolores fugit nam.</p>
+						</article>
+						<article>
+							<h3>inclusive design pattern</h3>
+							<P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, eos veritatis recusandae, vitae mollitia aspernatur quis nesciunt incidunt culpa explicabo accusamus asperiores reprehenderit, officiis quos deleniti unde illum aut suscipit?</P>
+						</article>
+				</div>
+
+				<div id="about">
+					<h2>Tentang Saya</h2>
+					<span class="identitas">Erick Fred,17412145</span>
+					<p>Hello nama saya Erick Fred lahir di kota Pontianak pada tanggal 7 maret 1999 di rumah sakit Antonius,
+					saya adalah anak ke2 dari 2 bersaudara, papa saya bekerja sebagai pegawai swasta dan mama saya bekerja sebagai ibu rumah tangga,
+					saya sekarang kuliah di universitas Widya Dharma Pontianak di jurusan Sistem Informasi,
+					saya tinggal bersama ke2 orang tua saya di jl.sei raya dalam, komp.Bumi batara 2 c.85.Email:erickfred1617@gmail
+					telp:+6289691637760.</p>
+					<h2>Hubungi Saya</h2>
+					<span>Email:erickfred1617@gmail.com</span>
+					<span>Telp:+6289691637760</span>
+					<span>Alamat:jl.Sei Raya dalam, Komp.Bumi Batara 2 C.85</span>
+				</div>
+
+				<div id="contact">
+					<h2>Kirim Pesan Ke Saya</h2>
+					<form method="POST" action="#">
+							<label for="nama"><input type="text" name="nama" id="nama" placeholder="Nama"> </label>
+							<label for="email"><input type="text" name="email" id="email" placeholder="Email"> </label>
+							<label for="message"><textarea name="message" id="message" placeholder="Message"></textarea></label>
+							<button type="submit">Kirim</button>
+					</form>
+				</div>
+			</div>
+			<footer>
+				<p>copyright hari ini, sebuah pencapaian kecil</p>
+			</footer>
+		</body>
+</html>
 <!-- agar browser dapat merender dengan benar, perlu ditentukan doctype yang digunakan -->
 
 <!-- buatlah element html -->
