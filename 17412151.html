@@ -3,15 +3,29 @@
 	<head>
 		<meta charset="utf-8">
 		<title>ngoding itu ga sulit</title>
-	<style type="text/css">
-		body {
-			font-family: "century gothic", "segoe UI", Tahoma, Geneva; 
+	</head>
+
+	<style>
+		* {
+			box-sizing: border-box;
 		}
 
-		li {
-			list-style: none;
+		body {
+			font-family: "Century Gothic", "segoe UI", "Tahoma", "Geneva";
+			margin: 0px;
+			padding: 0px; 
+		}
+
+		nav ul li {
 			display: inline-block;
 			padding: 8px 16px 8px 16px;
+			text-decoration: none;
+			color: #ff5800;
+		}
+
+		nav ul li a {
+			text-decoration: none;
+			color: #ff5800;
 		}
 
 		nav {
@@ -19,140 +33,178 @@
 			position: fixed;
 			top: 0;
 			width: 100%;
+			background-color: rgba(255,255,255,0.8);
+			z-index: 3;
 		}
 
-		ul {
+		nav ul {
+			list-style: none;
 			margin: 0;
 			padding: 0;
 		}
 
 		.container {
 			max-width: 840px;
-			margin-right: auto;
-			margin-left: auto;
+			margin: 0px auto;
 		}		
 
-		.Hello {
+		#hello {
 			height: 480px;
 			background-color: deepskyblue;
 		}
 
+		.banner {
+			overflow: hidden;
+			height: 100%;
+			position: relative;
+		}
+
+		small {
+			position: absolute;
+			left: 16px;
+			bottom: 16px;
+			color: ghostwhite;
+			z-index: 3;
+		}
+
+		.banner h1 {
+			color: white;
+			background-color: rgba(0,0,0,0.7);
+			padding: 16px 32px;
+			display: inline-block;
+			position: absolute;
+			bottom: 60px;
+			z-index: 3;
+		}
+
+		#wrapper h2 {
+			text-align: center;
+		}
+
+		#course article{
+			width: 33.33%;
+			padding: 16px;
+			display: table-cell;
+		}
+
+		.identitas {
+			color: tomato;
+			font-size: 18px;
+
+		}
+
+		#about span {
+			display: block;
+		}
+
+		#about {
+			text-align: center;
+		}
+
+		#course,#about,#contact {
+			padding: 40px 0px;
+		}
+
+		footer {
+			background-color: royalblue;
+			height: 120px;
+			text-align: center;
+			padding: 32px 0px;
+			color: azure;
+		}
+
+		input[type=text] {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px	0;
+			border: 1px solid grey;
+			border-radius: 20px;
+		}
+
+		textarea {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px	0;
+			border: 1px solid grey;
+			border-radius: 30px;
+		}
+
+		button {
+			background-color: lightsteelblue;
+			color: black;
+			width: 100%;
+			padding: 10px 40px;
+			border: none;
+			border-radius: 2px;
+		}
+
 
 	</style>>
-	<body>
-		<nav>
-			<ul>
-				<li><a href="Hello">Hello</li>
-				<li><a href="Course">Course</li>
-				<li><a href="About">About</li>
-				<li><a href="Contact">Contact</li>
-			</ul>
-		</nav>
-		<div class="container" id="wrapper">
-			<div id="Hello">
-				<div class="banner">
-					<img src="C:\Users\Rtech\Documents\GitHub\html-css-ex-01\assets\banner.jpg" alt="gambar latar">
-					<h1>ngoding itu gak susah</h1>
-					<small>*perlu dibiasakan aja</small>
-				</div>	
+		<body>
+			<nav>
+				<ul>
+					<li><a href="#hello">Hello</a></li>
+					<li><a href="#course">Course</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+
+				<div class="container" id="wrapper">
+					<div id="hello">
+						<div class="banner">
+							<h1>ngoding itu gak susah</h1>
+							<img src="C:\Users\Rtech\Documents\GitHub\html-css-ex-01\assets\banner.jpg" alt="Gambar Latar">
+							<small>*perlu dibiasakan aja</small>
+						</div>	
+					</div>	
+
+					<div id="course">
+						<h2>Course yang Telah Diselesaikan</h2>
+						<article>
+							<h3>Machine Learning</h3>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis facere aut, at, distinctio nesciunt sequi delectus, quas molestiae nisi accusamus asperiores praesentium aperiam sint qui iusto facilis! Possimus, consectetur earum!</p>
+						</article>
+						<article>
+							<h3>Predictive Analysis</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus impedit quam eveniet. At reprehenderit animi vero, debitis consequatur in quam veritatis, ipsam praesentium, minus perferendis obcaecati? Ratione dolores fugit nam.</p>
+						</article>
+						<article>
+							<h3>Inclusive Design Pattern</h3>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, eos veritatis recusandae, vitae mollitia aspernatur quis nesciunt incidunt culpa explicabo accusamus asperiores reprehenderit, officiis quos deleniti unde illum aut suscipit?</p>
+						</article>
+					</div>
+
+					<div id="about">
+						<h2>Tentang Saya</h2>
+						<span class="identitas"><strong>Gerhana Aisyah, 17412151</strong></span>
+						<p>Nama saya Gerhana. Lengkapnya Gerhana Aisyah Goldy Hanie. Saya lahir dan besar di Pontianak. Saat ini saya bekerja sebagai Desainer Visual pada sebuah media di Pontianak. Saya membuat materi visual untuk media sosial tempat saya bekerja. Materi visual ini berupa web banner, greeting hari besar, promo program dll. Software atau platform yang biasa saya gunakan untuk membantu pekerjaan saya adalah  Adobe Illustrator dan Canva. gerhanagoldy@gmail.com, mobile: 083151829652</p>
+						<h2>Hubungi Saya</h2>
+						<span>gerhanagoldy@gmail.com</span>
+						<span>083151829652</span>
+						<span>Jalan HM Suwignyo</span>
+					</div>
+
+					<div id="contact">
+						<h2>Kirim Pesan Ke Saya</h2>
+						<form action="/submit-pesan" method="POST">
+							<label for="nama">Nama<input type="text" name="nama" id="nama" placeholder="Nama"></label>
+							<label for="email">Email<input type="text" name="email" id="email" placeholder="Email"></label>
+							<label for="message">Message<textarea name="message" id="message" placeholder="Message"></textarea></label>
+							<button type="submit">Kirim</button>
+						</form>
+					</div>	
+				</div>
 			</div>
-			<div id="Course">
-				<h2>Course yang Telah Diselesaikan</h2>
-				<article>
-					<h3>Machine Learning</h3>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis facere aut, at, distinctio nesciunt sequi delectus, quas molestiae nisi accusamus asperiores praesentium aperiam sint qui iusto facilis! Possimus, consectetur earum!</p>
-				</article>
-				<article>
-					<h3>Predictive Analysis</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus impedit quam eveniet. At reprehenderit animi vero, debitis consequatur in quam veritatis, ipsam praesentium, minus perferendis obcaecati? Ratione dolores fugit nam.</p>
-				</article>
-				<article>
-					<h3>Inclusive Design Pattern</h3>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, eos veritatis recusandae, vitae mollitia aspernatur quis nesciunt incidunt culpa explicabo accusamus asperiores reprehenderit, officiis quos deleniti unde illum aut suscipit?</p>
-				</article>
-			</div>
-			<div id="About"></div>
-				<h2>Tentang Saya</h2>
-				<span>Gerhana Aisyah, 17412151</span>
-				<p>Nama saya Gerhana. Lengkapnya Gerhana Aisyah Goldy Hanie. Saya lahir dan besar di Pontianak. Saat ini saya bekerja sebagai Desainer Visual pada sebuah media di Pontianak. Saya membuat materi visual untuk media sosial tempat saya bekerja. Materi visual ini berupa web banner, greeting hari besar, promo program dll. Software atau platform yang biasa saya gunakan untuk membantu pekerjaan saya adalah  Adobe Illustrator dan Canva. gerhanagoldy@gmail.com, mobile: 083151829652</p>>
-				<h2>Hubungi Saya</h2>
-				<span>gerhanagoldy@gmail.com</span>
-				<span>083151829652</span>
-				<span>Jalan HM Suwignyo</span>
-			<div id="Contact"></div>
-				<h2>Kirim Pesan Ke Saya</h2>
-				<form action="/submit-pesan" method="POST">
-					<label for="nama">Nama</label>
-						<input type="text" name="nama" id="nama">
-					<label for="email">Email</label>
-						<input type="text" name="email" id="email">
-					<label for="message">Message</label>
-						<textarea name="message" id="message"></textarea>
-					<button type="submit">Kirim</button>
-				</form>
-		</div>
-		<footer>
-			<p>Copyright Hari Ini, Sebuah Pencapaian Kecil</p>
-		</footer>
-	</body>
+
+			<footer>
+				<p>Copyright Hari Ini, Sebuah Pencapaian Kecil</p>
+			</footer>
+
+		</body>
 </html>
 
-<!-- kemudian kita akan mulai dari nav menu -->
-<!-- 
-	list item memiliki bullet pada sebelah kirinya, untuk menghilangkannya,
-	kita menggunakan properti "list-style" dengan value "none"
--->
-<!--
-	agar list item tersusun sejajar, kita perlu mengubah properti display
-	menjadi inline-block, dan memberi padding kiri dan kanan sebesar 16px
-	dan atas bawah sebesar 8px
--->
-<!--
-	agar susunan menu terdapat di tengah halaman, properti text-align diubah
-	menjadi "center" pada element nav
--->
-<!--
-	supaya menu itu tetap berada di posisi atas layar meski layar sudah discroll,
-	properti position diubah menjadi "fixed" dengan top "0" dan width "100%"
--->
-<!--
-	perlu disadari bahwa terdapat default margin dan padding pada element ul,
-	agar design menjadi lebih baik, nilai properti margin dan paddingnya perlu
-	untuk di-nol-kan.
--->
 
-<!--
-	kita akan membatasi div.container menjadi maksimal 840px  dan menempati tengah
-	halaman, agar tidak melewati 840px, kita akan membatasi dengan memberi
-	properti max-width, dan kemudian memberi margin "auto" pada sisi kiri dan
-	sisi kanan div.container
--->
-
-<!--
-	pada div#hello, ubah proerti height menjadi "480px", ini untuk mengatur
-	tinggi div ini menjadi 480px 
-	dan	background-color "deepskyblue" - di mana apabila ada wilayah yang tidak
-	tercover oleh img, maka akan kelihatan warna biru langit.
--->
-<!--
-	Apbila diperhatikan, sepertinya gambar keluar dari wilayah banner. 
-	agar tampilan tidak semrawut, properti overflow pada banner kita set sebagai "hidden".
-	kemudian tinggi dari banner harus dinyatakan bahwa menempati 100% dari element parent-nya
--->
-<!--
-	element small pada banner perlu diset posisinya menjadi absolute, dan diposisikan
-	kiri dan bawahnya pada 16px.
-	agar posisi absolute itu berada pada lingkup wilayah .banner, maka banner harus
-	diposisikan secara "relative"
-	agar warna dapat terlihat sedikit kontras dengan gambar, kita akan menggunakan
-	warna "ghostwhite" pada tulisan element small
-	supaya dikenali pada browser sebagai layer yang lebih tinggi, properti z-index
-	diatur lebih tinggi daripada banner.
--->
-<!--
-	setelah pengaturan z-index, menu pada beberapa versi browser bisa saja tertimpa atau hilang
-	di belakang banner, ubah juga properti z-index pada menu agar di atas banner.
--->
 <!-- 
 	header h1 pada banner, akan kita tampilkan dengan warna putih dan latar hitam
 	dengan opacity 70%, atur padding sebesar 16px pada atas bawah, 32px pada kiri kanan
