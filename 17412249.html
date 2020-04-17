@@ -1,7 +1,191 @@
-<!-- agar browser dapat merender dengan benar, perlu ditentukan doctype yang digunakan -->
+<!DOCTYPE html>
 
-<!-- buatlah element html -->
+<html>
+	<head>
+		<meta charset="UTF-8">
+	<title>Ngoding Itu Ga sulit</title>
+	</head>
 
+
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+
+		body{
+			font-family: "Century Gothic","segoe UI", "Tahoma", "Geneva";
+			margin: 0px;
+			padding: 0px;
+		}
+
+		nav{
+			text-align: center;
+			position: fixed;
+			top: 0px;
+			background-color: rgba(255,255,255,0.8);
+			width: 100%;
+			z-index: 3;
+		}
+
+		nav ul{
+			list-style: none;			
+			margin : 0;
+			padding : 0;	
+		}
+
+		nav ul li{
+			display: inline-block;
+			padding: 8px 16px;			
+			text-decoration: none;
+			color: #ff5800;
+		}
+
+		nav ul li a{							
+			text-decoration: none;
+			color: #ff5800;
+		}
+
+		.container{
+			max-width: 840px;
+			margin : 0px auto;			
+		}
+
+		div #hello{
+			background-color: deepskyblue;
+			height: 480px;			
+		}
+
+		.banner{
+			overflow: hidden;
+			height: 100%;
+			position: relative;
+		}
+
+		small{
+			position: absolute;
+			left: 16px;
+			bottom: 16px;
+			color : ghostwhite;
+			z-index: 3;
+		}
+
+		.banner h1{
+			color : white;
+			background-color: rgba(0,0,0,0.7);
+			padding: 16px 32px;
+			display: inline-block;
+			position: absolute;
+			bottom: 60px;
+			z-index: 3;
+		}
+
+		#wrapper h2{
+			text-align: center;			
+		}
+
+		#course article{
+			width: 33.33%;					
+			padding: 16px;
+			display: table-cell;
+		}
+
+		#about{
+			text-align: center;
+		}
+
+		.identitas{
+			color: tomato;
+			font-size: 18px;
+		}
+
+		#about span{
+			display: block;
+		}
+
+		#course,#about,#contact{
+			padding : 40px 0px;
+		}
+
+
+		button{
+			background-color: #e7e7e7;
+			color: black;
+			width: 100%;
+			padding: 10px 40px;
+			border-radius: 5px;
+		}
+
+		footer{
+			background-color: royalblue;
+			height: 120px;
+			text-align: center;
+			padding : 32px 0px;
+			color: azure;
+		}
+
+
+	</style>
+
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="#hello"> Hello </a></li>
+					<li><a href="#course"> Course </a></li>
+					<li><a href="#about"> About </a></li>
+					<li><a href="#contact"> Contact </a></li>
+				</ul>
+			</nav>
+		</header>
+ 		<div class="container" id="wrapper">
+ 			<div id="hello">
+ 				<div class="banner">
+ 					<h1>Ngoding Itu Ga sulit</h1>
+ 					<img src="assets/banner.jpg" alt="Gambar Latar">
+ 					<small>*perlu dibiasakan aja</small>
+ 				</div>
+ 			</div>
+ 			<div id="course">
+ 				<h2>Course yang telah diselesaikan</h2>
+ 				<article>
+ 					<h3>Machine Learning</h3>
+ 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis facere aut, at, distinctio nesciunt sequi delectus, quas molestiae nisi accusamus asperiores praesentium aperiam sint qui iusto facilis! Possimus, consectetur earum!</p>
+ 				</article>
+ 				<article>
+ 					<h3>Predictive Analysis</h3>
+ 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus impedit quam eveniet. At reprehenderit animi vero, debitis consequatur in quam veritatis, ipsam praesentium, minus perferendis obcaecati? Ratione dolores fugit nam.</p>
+ 				</article>
+ 				<article>
+ 					<h3>Inclusive Design Pattern</h3>
+ 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, eos veritatis recusandae, vitae mollitia aspernatur quis nesciunt incidunt culpa explicabo accusamus asperiores reprehenderit, officiis quos deleniti unde illum aut suscipit?</p>
+ 				</article>
+ 			</div>		
+ 			<div id="about">
+ 				<h2>Tentang Saya</h2>
+ 				<span class="identitas"><strong>Anggelia, 17412249</strong></span>
+ 				<p>Nama saya adalah Anggelia biasa dipanggil Angel/Lia, saya lahir di Pontianak pada tanggal 10 Juni 1999, saya tinggal di Jl.Pramuka gg.suka sayur Sungai Rengas. Saya sedang kuliah di Universitas Widya Dharma Pontianak menggambil jurusan Sistem Informasi,saya juga bekerja di Sentral Yamaha Pontianak bagian pajak. Sekian dan terima kasih, angellia1006@gmail.com, mobile : +62 8956 0563 7779</p>
+ 				<h2>Hubungi Saya</h2>
+ 				<span>angellia1006@gmail.com</span>
+ 				<span><span>+62 8956 0563 7779</span></span>
+ 				<span>Jl. Pramuka Sungai Rengas</span>
+ 			</div>		
+ 			<div id="contact">
+ 				<h2>Kirim Pesan ke Saya</h2>
+ 				<form method="POST" action="#">
+ 					<label for="nama"> Nama <input type="Text" name="nama" id="nama" placeholder="Nama" required> </label>
+ 					<label for="email"> Email <input type="Email" name="email" id="email" placeholder="Email" required> </label>
+ 					<label for="message"> Message <textarea name="message" id="message" placeholder="Message (Min. 200 Character)" minlength="200" required></textarea> </label>
+ 					<button type="submit">Kirim</button>	
+ 				</form>
+ 			</div>		
+ 		</div>		
+ 		<footer>
+ 			<p>copyright hari ini, sebuah pencapaian kecil</p>
+ 		</footer>
+	</body>
+
+<!-- agar browser dapat merender dengan benar, perlu ditentukan doctype yang digunakan -->	
+<!-- buatlah element html -->	
 <!-- 
     suatu html harus memiliki bagian head untuk menyimpan metadata
     dan informasi yang dapat dibaca oleh mesin
@@ -9,8 +193,7 @@
     - tambahkan element meta di dalam head dengan property charset dan value "utf=8"
     - agar suatu halaman memiliki judul, kita memerlukan element title
     - isi judul/title page dengan "ngoding itu ga sulit"
--->
-
+-->	
 <!-- 
     element body memuat segala informasi yang terlihat/visible pada browser
  -->
@@ -193,7 +376,6 @@
 	padding 16px di ke-empat sisinya
 	width 33.33% berarti lebar masing-masing article hanya menempati wsepertiga dari
 	element induk/parent-nya, sehingga ke-tiganya dapat kita jejerkan dalam satu baris.
-
 	namun karena article merupakan block element, maka properti displaynya perlu
 	diubah menjadi "table-cell", nilai properti ini memperlakukan article seolah
 	kolom dalam baris tabel.
@@ -245,3 +427,4 @@
 	 apabila ada yang janggal dalam design, perhatikan box model default 
 	 dan margin default pada body
  -->
+ </html>
