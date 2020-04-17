@@ -3,79 +3,227 @@
 <html>
 
         <head>
-        	 <meta charset = "UTF-8">
-	         <title>Ngoding itu ga sulit</title>
+        	     <meta charset = "UTF-8">
+	     <title>Ngoding itu ga sulit</title>
+
+	     <style>
+	           	  body{
+	           	            font-family: "century gothic","segoe UI","Tahoma","Geneva";
+	           	  }
+
+	           	  nav{
+                                         text-align: center;
+                                         position: fixed;
+                                         top: 0px;
+                                         width: 100%;
+                                         background-color: rgba(255,255,0,8);
+	           	  }
+
+	           	  nav ul{
+	           	             list-style: none;
+	           	             margin: 0px;
+	           	             padding: 0px;
+	           	  }
+
+	           	  nav ul li{
+	           	       	display: inline-block;
+	           	       	padding: 8px 16px;
+	           	       	text-decoration: none;
+	           	  }
+
+	           	  nav ul li a{
+			   color:#ff5800;
+                                  }
+
+	           	  .container{
+	           	       	   max-width: 840px;
+	           	       	   margin: auto;
+	           	  }
+
+	           	  div #hello{
+	           	       	    height: 480px;
+	           	       	    background-color: deepskyblue;
+	           	  }
+
+	           	  .banner{
+	           	               overflow: hidden;
+	           	               height : 100%;
+	           	               position: relative;
+	           	  }
+
+	           	  .banner small{
+	           	       	        position: absolute;
+	           	       	        left: 16px;
+	           	       	        bottom: 16px;
+	           	       	        color : ghostwhite;
+	           	       	        z-index: 20
+                                  }
+
+	           	  .banner h1{
+		                   color: white;
+	                                   background-color: rgba(0, 0, 0, 0.7);
+		                   padding: 16px 32px;
+		                   display: inline-block;
+		                   position: absolute;
+		                   bottom: 60px;
+		                   z-index: 20;
+	           	   }
+
+	           	  #wrapper h2{
+	           	       	      text-align: center;
+	           	  }
+
+	           	  #course article{
+	           	       	          width: 33.33%;
+	           	       	          padding: 16px;
+	           	       	          display: table-cell;
+	           	  }
+
+	           	  .identitas{
+	           	       	  color: tomato;
+	           	       	  font-weight: bold;
+	           	       	  font-size: 18px;
+	           	  }
+
+	           	  div #about span{
+	           	       	             display: block;
+	           	  }
+
+	           	  div #about {
+	           	       	     text-align: center;
+	           	  }
+
+	           	  div #course,#about,#contact{
+				               padding:40px 0px;
+		  }
+
+                                  footer{
+		            background-color: royalblue;
+		            color: azure;
+		            top: 120px;
+		            text-align: center;
+		            padding: 32px 0px;
+	                  }
+
+	                  input[type=text]{
+			            width:100%;
+		                            padding:10px 20px;
+		                            margin:5px 0px;
+		                            border:2px solid black;
+		                            border-radius:5px;
+	                  }
+                                 
+                                  button{
+	                             width:105%;
+	                             padding:10px 20px;
+		             margin:5px 0px;
+		             border-radius:5px;
+                                  }
+
+	     </style>
         </head>
 
+
+
         <body>
-        	<nav>
-        	       <ul>
-        	   	     <li><a href = "#hello">Hello</a></li>
-        	   	     <li><a href = "#course">Course</a></li>
-        	   	     <li><a href = "#about">About</a></li>
-        	   	     <li><a href = "#contact">Contact</a></li>
-        	       </ul>
-                </nav>
+        	       <nav>
+        	   	     <ul>
+        	   	     	  <li><a href = "#hello">Hello</a></li>
+        	   	     	  <li><a href = "#course">Course</a></li>
+        	   	     	  <li><a href = "#about">About</a></li>
+        	   	     	  <li><a href = "#contact">Contact</a></li>
+        	   	     </ul>
+                      </nav>
 
-        	<div class = "container" id = "wrapper">
+        	   	     <div class = "container" id = "wrapper">
 
-        	<div id = "hello">
-        	     <div class = "banner">	
-        	   	  <img src = "assets/banner.jpg" alt = "gambar latar">
-        	   	  <h1>Ngoding itu gak susah</h1>
-			  <small>Perlu dibiasakan aja</small>
-	             </div>
-                </div>
+        	   	     <div id = "hello">
+        	   	             <div class = "banner">	
+        	   	     	     <img src = "assets/banner.jpg" alt = "gambar latar">
+        	   	     	     <h1>ngoding itu gak susah</h1>
+			     <small>perlu dibiasakan aja</small>
+	                             </div>
+        	   	     </div>
 
-        	<div id = "course">
-        	     <h2>Course yang telah diselesaikan</h2>
-        	   	 <article>
-        	   	     	   <h3>Machine Learning</h3>
-        	   	     	   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis facere aut, at, distinctio nesciunt sequi delectus, quas molestiae nisi accusamus asperiores praesentium aperiam sint qui iusto facilis! Possimus, consectetur earum!</p>
+        	   	     <div id = "course">
+        	   	             <h2>Course yang telah diselesaikan</h2>
+        	   	     	     <article>
+        	   	     	  	   <h3>machine learning</h3>
+        	   	     	  	   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis facere aut, at, distinctio nesciunt sequi delectus, quas                                                                            molestiae nisi accusamus asperiores praesentium aperiam sint qui iusto facilis! Possimus, consectetur earum!</p>
 
-        	   	           <h3>Predictive Analysis</h3>
-        	   	     	   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus impedit quam eveniet. At reprehenderit animi vero, debitis consequatur in quam veritatis, ipsam praesentium, minus perferendis obcaecati? Ratione dolores fugit nam.</p>
+        	   	     	  	   <h3>predictive analysis</h3>
+        	   	     	  	   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus impedit quam eveniet. At reprehenderit animi vero, debitis                                                                    consequatur in quam veritatis, ipsam praesentium, minus perferendis obcaecati? Ratione dolores fugit nam.</p>
 
-        	   	     	   <h3>Inclusive Design Pattern</h3>
-        	   	     	   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, eos veritatis recusandae, vitae mollitia aspernatur quis nesciunt incidunt culpa explicabo accusamus asperiores reprehenderit, officiis quos deleniti unde illum aut suscipit ?</p>
-        	   	 </article>
-        	</div>
+        	   	     	  	    <h3>inclusive design pattern</h3>
+        	   	     	  	    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, eos veritatis recusandae, vitae mollitia aspernatur quis nesciunt                                                                     incidunt culpa explicabo accusamus asperiores reprehenderit, officiis quos deleniti unde illum aut suscipit ?</p>
+        	   	     	     </article>
+        	   	     </div>
 
-        	<div id = "about">
-        	     <h2>Tentang saya</h2>
-        	     <span>William, 17412172</span>
-        	     <p>Perkenalkan nama saya William. Lahir di Pontianak, 3 Juli 1999. Alamat rumah saya di Jl. Siam Dalam No. 91D. Keseharian saya, saya memelihara ikan hias seperti ikan louhan, dan membantu orang tua saya memelihara ikan arwana super red. Di zaman sekarang banyak orang memelihara ikan arwana karena memiliki nilai jual yang tinggi, tetapi dalam perawatannya agak berbeda dengan ikan hias pada umumnya dikarenakan ikan arwana sangat mudah sekali mengalami sakit sehingga ini menjadi tantangan tersendiri untuk memeliharanya. Email : williambong040@gmail.com, mobile : +62 895 382 178 824</p>
+        	   	     <div id = "about">
+        	   	             <h2>Tentang saya</h2>
+        	   	             <span>William, 17412172</span>
+        	   	             <p>Perkenalkan nama saya William. Lahir di Pontianak, 3 Juli 1999. Alamat rumah saya di Jl. Siam Dalam No. 91D. Keseharian saya, saya                                              memelihara ikan hias seperti ikan louhan, dan membantu orang tua saya memelihara ikan arwana super red. Di zaman sekarang banyak orang                                                      memelihara ikan arwana karena memiliki nilai jual yang tinggi, tetapi dalam perawatannya agak berbeda dengan ikan hias pada umumnya                                                          dikarenakan ikan arwana sangat mudah sekali mengalami sakit sehingga ini menjadi tantangan tersendiri untuk memeliharanya. Email :                                              williambong040@gmail.com, mobile : +62 895 382 178 824</p>
 
-        	     <h2>Hubungi Saya :</h2>
-		     <span>williambong040@gmail.com</span>
-		     <span>0895382178824</span>
-		     <span>JL.Siam Dalam No. 91D</span>
-		</div>
+        	   	             <h2>Hubungi Saya :</h2>
+		             <span>williambong040@gmail.com</span>
+		             <span>0895382178824</span>
+		             <span>JL.Siam Dalam No. 91D</span>
+		    </div>
 
-		<div id = "contact">
-		     <h2>Kirim pesan ke saya</h2>
+		    <div id = "contact">
+		            <h2>Kirim pesan ke saya</h2>
 
-		     <form method = "POST" action="#">
-		           <label for = "nama">
-		           <input type="text" name="nama" id="nama" placeholder="Nama"></label>
-		           <br>
-		           <label for = "email">
-		           <input type="text" name="email" id="email" placeholder="Email"></label>
-		           <br>
-		           <label for = "message">
-		           <input type="text" name="message" id="message" placeholder="Message"></label>
+		            <form method="POST" action="#">
+		                      <label for = "nama">
+		                      <input type="text" name="nama" id="nama" placeholder="Nama"></label>
+		                      <br>
+		                      <label for = "email">
+		                      <input type="text" name="email" id="email" placeholder="Email"></label>
+		                      <br>
+		                      <label for = "message">
+		                      <textarea  name="message" id="message" placeholder="Message"></textarea></label>
 		                        
-		           <button type="submit">Kirim</button>	
-		     </form>
-	        </div>
+		                      <button type="submit">Kirim</button>	
+		           </form>
+	                 </div>
 
-	        <footer>Copyright hari ini,sudah pencapaian kecil.</footer>
+	                 <footer>Copyright hari ini,sudah pencapaian kecil.</footer>
 
-        </body>
+              </body>
 
 </html>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- agar browser dapat merender dengan benar, perlu ditentukan doctype yang digunakan -->
+
+<!-- buatlah element html -->
+
+<!-- 
+    suatu html harus memiliki bagian head untuk menyimpan metadata
+    dan informasi yang dapat dibaca oleh mesin
+    - buatlah element head
+    - tambahkan element meta di dalam head dengan property charset dan value "utf=8"
+    - agar suatu halaman memiliki judul, kita memerlukan element title
+    - isi judul/title page dengan "ngoding itu ga sulit"
+-->
 
 <!-- 
     element body memuat segala informasi yang terlihat/visible pada browser
@@ -310,4 +458,5 @@
  <!--
 	 apabila ada yang janggal dalam design, perhatikan box model default 
 	 dan margin default pada body
+
  -->
