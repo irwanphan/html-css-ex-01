@@ -1,222 +1,193 @@
-<!DOCTYPE HTML>
-<HTML>
-	<head>
-		<meta charset="UTF-8">
-		<title>ngoding itu ga sulit </title>
-	</head>
-	
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>ngoding itu ga sulit</title>
+</head>
+<style type="text/css">
+	body {
+		font-family: "Century Gothic","Segoe UI","Tahoma","Geneva";
+	}
+
+	nav { 
+		text-align: center;
+		position: fixed;
+		top: 0;
+		width: 100%; 
+		background-color: rgba(255,255,255,0.8);
+		z-index: 3;
+	}
+
+	nav ul {
+		padding: 0;
+		margin: 0;
+		
+	}
+
+	nav li {
+		list-style: none;
+		display: inline-block;
+		padding: 8px 16px 8px 16px;
+	}
+
+	nav li a {
+		text-decoration: none;
+		color: #ff5800;
+	}
+
+	.container {
+		max-width: 840px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#hello {
+		height: 480px;
+		background-color: deepskyblue;
+	}
+
+	#hello .banner {
+		overflow: hidden;
+		height: 100%;
+		position: relative;
+		z-index: 1;
+	}
+
+	.banner small {
+		position: absolute;
+		left: 16px;
+		bottom: 16px;
+		color: ghostwhite;
+		z-index: 2;
+	}
+
+	.banner h1 {
+		color: white;
+		background-color: black;
+		opacity: 70%;
+		padding: 16px 32px 16px 32px;
+		display: inline-block;
+		position: absolute;
+		margin: 360px 0px 60px 0px;
+	}
+
+	#wrapper h2 {
+		text-align: center;
+	}
+
+	#course, #about, #contact {
+		padding: 40px 0px 40px 0px;
+	}
+
+	#course article {
+		width: 33.33%;
+		padding: 16px;
+		display: table-cell;
+	}
+
+	#about {
+		text-align: center;
+	}
+
+	#about .identitas{
+		color: tomato;
+	}
+
+	form input, form textarea, form button {
+		width: 100%;
+		padding: 20px;
+		margin: 10px 0px 10px 0px;
+	}
+
+	form button {
+		background-color: royalblue;
+		border: 0px;
+		color: azure;
+		font-size: 15px;
+	}
+
+	footer {
+		background-color: royalblue;
+		height: 120px;
+		text-align: center;
+		padding: 32px 0px 32px 0px;
+	}
+
+	footer p {
+		color: azure; 
+	}
+</style>
 <body>
-	<header>
-		<nav>
-			<ul>
-				<li><a href="#hello">Hello</a></li>
-				<li><a href="#course">Course</a></li>
-				<li><a href="#about">About</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-		</nav>
-	</header>
-	<div class="container" id="wrapper">
-		<div id="hello">
-			<div class="banner">
-				<h1>ngoding itu gak susah</h1>		
-				<img src="assets/banner.jpg" width="840px" alt="gambar latar">			
-				<small>perlu dibiasakan aja</small>
+	<nav>
+		<ul>
+			<li><a href="#hello">HELLO</a></li>
+			<li><a href="#course">COURSE</a></li>
+			<li><a href="#about">ABOUT</a></li>
+			<li><a href="#contact">CONTACT</a></li>
+		</ul>
+	</nav>
+		<div class="container" id="wrapper">
+			<div id="hello">
+				<div class="banner">
+					<h1>ngoding itu gak susah</h1>
+					<small>*perlu dibiasakan aja</small>
+					<img src="assets/banner.jpg" alt="gambar latar">
+				</div>
+			</div>
+			<div id="course">
+				<h2>"Course yang telah diselesaikan"</h2>
+				<article>
+					<h3>machine learning</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis facere aut, at, distinctio nesciunt sequi delectus, quas molestiae nisi accusamus asperiores praesentium aperiam sint qui iusto facilis! Possimus, consectetur earum!
+					</p>
+				</article>
+				<article>
+					<h3>predictive analysis</h3>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus impedit quam eveniet. At reprehenderit animi vero, debitis consequatur in quam veritatis, ipsam praesentium, minus perferendis obcaecati? Ratione dolores fugit nam.
+					</p>
+				</article>
+				<article>
+					<h3>inclusive design pattern</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, eos veritatis recusandae, vitae mollitia aspernatur quis nesciunt incidunt culpa explicabo accusamus asperiores reprehenderit, officiis quos deleniti unde illum aut suscipit?
+					</p>
+				</article>
+			</div>
+			<div id="about">
+				<h2>Tentang Saya</h2>
+				<span class="identitas" style="font-size: 18px;">
+					<strong>Rendi 17412163</strong>
+				</span>
+				<p>
+					Saya lahir di Pontianak dan sedang kuliah juga di Universitas Widya Dharma.
+					Saya mempunyai keterampilan dalam bidang Desain Grafis dan Fotografi.
+					Saya pernah juga ikut berpartisipasi dalam lomba Desain Grafis dan Fotografi pada saat saya duduk di bangku SMK.
+				</p>
+				<h2>Hubungi Saya</h2>
+				<span class="identitas" style="display: block;">Email : rendiwenly@gmail.com</span>
+				<span class="identitas" style="display: block;">Mobile : 082154------------</span>
+				<span class="identitas" style="display: block;">jl.purnama</span>
+			</div>
+			<div id="contact">
+				<h2>Kirim Pesan ke Saya</h2>
+				<form method="POST">
+					<label>Nama</label>
+					<input type="text" id="rendi" name="rendi" placeholder="Nama Lengkap" style="display: block;" required>
+
+					<label>Email</label>
+					<input type="email" id="email" name="email" placeholder="example@gmail.com" style="display: block;" required>
+
+					<label>Message</label>
+					<textarea id="message" name="message" placeholder="Write message here.." style="display: block;" required></textarea>
+
+					<center><button>KIRIM</button></center>
+				</form>
 			</div>
 		</div>
-		<div id="course">
-			<h2>Course yang telah diselesaikan</h2>
-		<article>
-			<h3>Machine Learning</h3>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-				Perferendis facere aut, at, distinctio nesciunt sequi delectus, 
-				quas molestiae nisi accusamus asperiores praesentium aperiam sint qui iusto facilis! Possimus, consectetur earum!
-			</p>
-		</article>
-		<article>
-			<h3>Predictive Analysis</h3>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus impedit quam eveniet. At reprehenderit animi vero, 
-				debitis consequatur in quam veritatis, ipsam praesentium, minus perferendis obcaecati? Ratione dolores fugit nam.
-			</p>
-		</article>		
-		<article>
-			<h3>Inclusive Design Pattern</h3>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, eos veritatis recusandae, vitae mollitia aspernatur quis
-				nesciunt incidunt culpa explicabo accusamus asperiores reprehenderit, officiis quos deleniti unde illum aut suscipit?
-			</p>
-		</article>
-		</div>
-	</div>
-
-	<div id="about">
-		<h2>Tentang Saya</h2>
-		<span>Rendi, 17412163</span>
-			<p>Nama saya Rendi , saya lahir di kota Pontianak pada 25 November 1999.
-			Saat ini saya sedang bekerja di konter HP pada bagian penjualan,dikonter tersebut menyediakan
-			jasa pulsa multichip di Jl.Purnama(Victory Collection).Sekian dan terima kasih, rendiwenly@gmail.com, mobile: +628 215 437 7844.  
-			</p>
-		<h2>Hubungi Saya</h2>
-		<span>rendiwenly@gmail.com</span>
-		<span>082154377844</span>
-		<span>Jl.Purnama</span>
-	</div>
-
-	<div id="contact">
-		<h2>Kirim pesan ke saya</h2>
-		<form method="POST" action="#">
-		<label for="nama"><input type="text" name="nama" id="nama" placeholder="Nama"></label>
-		<label for="email"><input type="text" name="email" id="email" placeholder="Email"></label>
-		<label for="message"><input type="text" name="message" id="message" placeholder="Message"></label>
-		<button type="submit">Kirim</button>	
-		</form>
-	</div>
 	<footer>
-		copyright hari ini,sudah pencapaian kecil di dunia
+		<p>Copyright hari ini, sebuah pencapaian kecil</p>
 	</footer>
-</body>	
-	
-	
-</HTML>
-
-<!-- 
-	semua instruksi di bawah ini adalah tidak lagi berurutan, kita akan mulai 
-	merapikan konten pada body supaya enak dilihat.
-	apabila ada yang tidak bisa dikerjakan, maka ada baiknya ditandai dulu dan
-	move on keinstruksi berikutnya, setelah itu baru kembali mengerjakannya
-	apabila sudah	menyelesaikan yang lain.
--->
-<!--
-	pada body, font-family akan menggunakan "century gothic" dengan fallback
-	font pada "segoe UI", Tahoma, dan Geneva
--->
-<!-- kemudian kita akan mulai dari nav menu -->
-<!-- 
-	list item memiliki bullet pada sebelah kirinya, untuk menghilangkannya,
-	kita menggunakan properti "list-style" dengan value "none"
--->
-<!--
-	agar list item tersusun sejajar, kita perlu mengubah properti display
-	menjadi inline-block, dan memberi padding kiri dan kanan sebesar 16px
-	dan atas bawah sebesar 8px
--->
-<!--
-	agar susunan menu terdapat di tengah halaman, properti text-align diubah
-	menjadi "center" pada element nav
--->
-<!--
-	supaya menu itu tetap berada di posisi atas layar meski layar sudah discroll,
-	properti position diubah menjadi "fixed" dengan top "0" dan width "100%"
--->
-<!--
-	perlu disadari bahwa terdapat default margin dan padding pada element ul,
-	agar design menjadi lebih baik, nilai properti margin dan paddingnya perlu
-	untuk di-nol-kan.
--->
-
-<!--
-	kita akan membatasi div.container menjadi maksimal 840px  dan menempati tengah
-	halaman, agar tidak melewati 840px, kita akan membatasi dengan memberi
-	properti max-width, dan kemudian memberi margin "auto" pada sisi kiri dan
-	sisi kanan div.container
--->
-
-<!--
-	pada div#hello, ubah proerti height menjadi "480px", ini untuk mengatur
-	tinggi div ini menjadi 480px 
-	dan	background-color "deepskyblue" - di mana apabila ada wilayah yang tidak
-	tercover oleh img, maka akan kelihatan warna biru langit.
--->
-<!--
-	Apbila diperhatikan, sepertinya gambar keluar dari wilayah banner. 
-	agar tampilan tidak semrawut, properti overflow pada banner kita set sebagai "hidden".
-	kemudian tinggi dari banner harus dinyatakan bahwa menempati 100% dari element parent-nya
--->
-<!--
-	element small pada banner perlu diset posisinya menjadi absolute, dan diposisikan
-	kiri dan bawahnya pada 16px.
-	agar posisi absolute itu berada pada lingkup wilayah .banner, maka banner harus
-	diposisikan secara "relative"
-	agar warna dapat terlihat sedikit kontras dengan gambar, kita akan menggunakan
-	warna "ghostwhite" pada tulisan element small
-	supaya dikenali pada browser sebagai layer yang lebih tinggi, properti z-index
-	diatur lebih tinggi daripada banner.
--->
-<!--
-	setelah pengaturan z-index, menu pada beberapa versi browser bisa saja tertimpa atau hilang
-	di belakang banner, ubah juga properti z-index pada menu agar di atas banner.
--->
-<!-- 
-	header h1 pada banner, akan kita tampilkan dengan warna putih dan latar hitam
-	dengan opacity 70%, atur padding sebesar 16px pada atas bawah, 32px pada kiri kanan
-	dan hanya menutupi pas sampai tulisannya, untuk itu
-	properti display diatur menggunakan "inline-block"
-	posisi diatur absolute, dengan jarak 60px dari bawah banner.
- -->
-
-<!--
-	agar semua judul header <h2> di dalam #wrapper berada di tengah, kita akan
-	menunjuk pada #wrapper h2 dan mengubah propertiya supaya text-align pada "center"
--->
-<!--
-	untuk masing-masing article dalam div#course, kita akan menunjuk secara spesifik
-	pada #course article,
-	tujuannya adalah menampilkan masing-masing article dalam bentuk kolom masing-masing
-	kita akan memberikan width pada masing-masing article sebesar 33.33% dengan 
-	padding 16px di ke-empat sisinya
-	width 33.33% berarti lebar masing-masing article hanya menempati wsepertiga dari
-	element induk/parent-nya, sehingga ke-tiganya dapat kita jejerkan dalam satu baris.
-
-	namun karena article merupakan block element, maka properti displaynya perlu
-	diubah menjadi "table-cell", nilai properti ini memperlakukan article seolah
-	kolom dalam baris tabel.
--->
-
-<!-- 
-	kita perlu memberi nama class pada span yang menunjukkan nama pada div#about
-	tambahkan class "identitas" pada span tersebut, kemudian ubah properti color
-	pada .identitas menjadi "tomato" dan beri tag strong pada nama agar nama
-	mwnjadi dicetak tebal.
-	agar nama dan nim lebih menonjol, kita besarkan ukurannya sedikit, properti
-	font-size kita ubah menjadi 18px
- -->
- <!--
-	span yang di bawah header <h2> "hubungi saya" bertumpuk pada satu baris dan
-	menjadi sulit untuk dibaca, agar masing-masing span menempati satu baris,
-	properti display kita ubah menjadi block.
-	setelah itu, align semua tulisan pada div#about ke tengah
- -->
- 
- <!--
-	 sepertinya jarak antar div dalam container terlalu dekat, maka kita akan memberi
-	 padding pada atas dan bawah div #course, #about, dan #contact sebesar 40px
- -->
-
-<!--
-	rapikan bagian form :) validasi dan ingat placeholder
--->
-
- <!--
-	 footer akan diubah menjadi berwarna latar "royal blue" dan pargraph pada footer
-	 berwarna "azure"
-	 atur tinggi footer menjadi 120px, tengahkan paragraph, dan beri padding 
-	 pada sisi atas dan bawah sebesar 32px
- -->
-
-<!--
-	kembali ke menu navigasi, agar menu navigasi lebih enak dilihat saat scroll
-	kita akan menambahkan warna latar putih transparan,
-	kita dapat menggunakan model RGBA, misalnya pada properti background-color
-	kita berikan nilai "rgba(255, 255, 255, 0.8)" yang berarti opacity dari warna
-	tersebut adalah 80%
-	setelah itu, agar garis bawah pada link tidak terlihat, properti text-decoration
-	akan kita beri nilai "none"
-	kemudian beri warna "#ff5800" pada linknya
--->
-
- <!--
-	 apabila ada yang janggal dalam design, perhatikan box model default 
-	 dan margin default pada body
- -->
+</body>
+</html>
