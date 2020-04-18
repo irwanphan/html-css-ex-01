@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>ngoding itu gak sulit</title>
+		<style type="text/css">
+			body{
+				font-family: "century gothic", "segoe UI", Tahoma,Geneva;
+			}
+			li{
+				list-style: none;
+				display: inline-block;
+				padding: 8px 16px 8px 16px;
+			}
+			nav{
+				text-align: center;
+				position: fixed;
+				top:0;
+				width: 100%;
+				z-index: 5;
+				background-color: rgb(255,255,255,0.8);
+			}
+			nav a{
+				text-decoration: none;
+				color: #ff5800;
+			}
+			ul{
+				margin: 0;
+				padding: 0;
+			}
+			div.container{
+				max-width: 840px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			div#hello{
+				height: 480px;
+				background-color: deepskyblue;
+			}
+			.banner{
+				overflow: hidden;
+				height: 100%;
+				position: relative;
+				display: inline-block;
+			}
+			.banner h1{
+				color: white;
+				background-color: black;
+				opacity: 70%;
+				padding: 16px 32px 16px 32px;
+				position: absolute;
+				bottom: 60px;
+				z-index: 4;
+			}
+			#wrapper h2{
+				text-align: center; 
+			}
+			.banner small{
+				position: absolute;
+				left: 16px;
+				bottom: 16px;
+				color: ghostwhite;
+				z-index: 4;
+			}
+			#course article{
+				width: 33.33%;
+				padding: 16px;
+				display: table-cell;
+			}
+			.identitas{
+				color: tomato;
+				font-size: 18px;
+			}
+			#about span{
+				display: block;
+			}
+			div#about{
+				text-align: center;
+			}
+			div#about,div#contact,div#course{
+				padding-top: 40px;
+				padding-bottom: 40px;
+			}
+			input,textarea,button,label{
+				margin: 10px 0px;
+				display: block;
+			}
+			footer{
+				background-color: royalblue;
+				height: 120px;
+				padding: 32px 0px;
+			}
+			footer p{
+				color: azure;
+				text-align: center;
+			}
+		</style>	
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li>
+					<a href="#hello">hello</a>
+				</li>
+				<li>
+					<a href="#course">course</a>
+				</li>
+				<li>
+					<a href="#about">about</a>
+				</li>
+				<li>
+					<a href="#contact">contact</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="container" id="wrapper">
+			<div id="hello">
+				<div class="banner">
+					<img src="assets/banner.jpg" alt="gambar latar">
+					<h1 class="banner1">ngoding itu gak susah</h1>
+					<small>*perlu dibiasakan aja</small>
+				</div>
+			</div>
+			<div id="course">
+				<h2>Course yang telah diselesaikan</h2>
+				<article>
+					<h3>machine learning</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis facere aut, at, distinctio nesciunt sequi delectus, quas molestiae nisi accusamus asperiores praesentium aperiam sint qui iusto facilis! Possimus, consectetur earum!
+					</p>
+				</article>
+				<article>
+					<h3>predictive analysis</h3>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus impedit quam eveniet. At reprehenderit animi vero, debitis consequatur in quam veritatis, ipsam praesentium, minus perferendis obcaecati? Ratione dolores fugit nam.
+					</p>
+				</article>
+				<article>
+					<h3>inclusive design pattern</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, eos veritatis recusandae, vitae mollitia aspernatur quis nesciunt incidunt culpa explicabo accusamus asperiores reprehenderit, officiis quos deleniti unde illum aut suscipit?
+					</p>
+				</article>
+			</div>
+			<div id="about">
+				<h2>Tentang saya</h2>
+				<span class="identitas">
+					<strong>Alfredo Fransiskus</strong>, 17412130
+				</span>
+				<p>
+					Halo semua ! Saya lahir di kota Pontianak. Untuk keterampilan saya jujur saja saya juga kurang yakin. Untuk sekarang hanya seorang pegawai di perusahaan dan kuliah di Universitas Widya Dharma Pontianak. Untuk proyek belum ada tawaran dan cukup sulit untuk mengerjakan proyek di waktu senggang. Pas di kantor cukup sulit karena untuk kerja proyek dibilang yang aneh-aneh (wajar orang kantor meski pernah kuliah malah gaptek) walaupun tugas kantor dah selesai semua. Pas di rumah udah capek untuk ngerjain proyek, terlebih tugas kuliah yang ada. Kalau ada tawaran proyek ya harus mikir-mikir dulu lah kalau memang ada waktu untuk ngerjakan ya ambil proyek (khususnya proyek tim biar gak overload). Sementara sih belum ada tawaran proyek yang bisa dikerjakan rame-rame(tim). Untuk program yang per tim memang pernah dilakukan tapi untuk nilai saja sih gak ada hubungan dengan proyek asli. Programnya ada yang visual studio 2010 (Program penjualan) dan Web (website film dengan sign up) pas itu belum pake yang namanya git, github atau semacamnya jadi agak susah juga mau ketemuan buat kerjain tugas ini. Ya begitu aja sih yang bisa diceritakan. Soalnya selain itu belum ada proyek yang dikerjakan. Jadi status saya sekarang hanya mahasiswa dan karyawan. Pada dasarnya ya kurang lebih dengan orang lain yang kulaih sambil kerja. Email : alfrans9090@gmail.com, no hp : +62 85245636367, alamat : jalan Siam, Pontianak.
+				</p>
+				<h2>hubungi saya</h2>
+				<span>email : alfrans9090@gmail.com</span>
+				<span>no hp : +62 85245636367</span>
+				<span>alamat : jln. Siam, Pontianak</span>
+			</div>
+			<div id="contact">
+				<h2>kirim pesan ke saya</h2>
+				<form method ="post">
+					<label for="#nama">Nama</label>
+					<input type="text" id="nama" name="nama" placeholder="nama" required pattern="[a-z]|[A-Z]">
+					<label for="#email">Email</label>
+					<input type="email" name="email" id="email" placeholder="email" required pattern"">
+					<label for="#message">Message</label> 
+					<textarea name="message" id="message" placeholder="message" required maxlenght="255"></textarea> 
+					<button type="submit">kirim</button>
+				</form>
+			</div>
+		</div>
+	</body>
+	<footer>
+		<p>copyright hari ini, sebuah pencapaian kecil</p>
+	</footer>
+</html>
