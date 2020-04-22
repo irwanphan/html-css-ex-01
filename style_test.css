@@ -1,0 +1,119 @@
+body{
+	margin:0;
+	font-family:"century gothic", segoe UI, Tahoma, Geneva;
+}
+nav{
+	text-align:center;
+	position: fixed;
+	top:0;
+	width:100%;
+	z-index:10;
+	background-color:rgba(255,255,255,0.8);
+
+}
+ul{
+	margin:0;
+	padding:0;
+}
+li{
+	list-style: none;
+	display: inline-block;
+	padding: 8px 16px;
+}
+li a{
+	text-decoration:none;
+	color:#ff5800;
+}
+.container{
+	max-width:840px;
+	border:5px solid #ff5800;
+	margin:0 auto;
+	
+}
+#wrapper h2{
+	text-align:center;
+}
+/* container hello*/
+#hello{
+	height: 480px;
+	background-color: deepskyblue;
+}	
+.banner{
+	height:inherit;
+	overflow: hidden;
+	position:relative;
+}
+.banner h1{
+	color:white;
+	background-color:black;
+	opacity: 70%;
+	padding:16px 32px;
+	display:inline-block;
+	position:absolute;	
+	left:16px;
+	bottom:16px;
+
+}
+.banner small{
+	color:ghostwhite;
+	position:absolute;
+	left:16px;
+	bottom:16px;
+	z-index:5 ;
+}
+
+
+/*div course*/
+
+#course article{
+	width:33.33%;
+	padding:16px;
+	display:table-cell;
+}
+#course{
+	
+}
+/*div about*/
+#about{
+	border-top:1px solid #ff5800;
+	text-align:center;
+	padding:40px 0;
+}
+#about span{
+	display:block;
+}
+.identitas{
+	color:red;
+	font-weight: bolder;
+}
+/*contact*/
+#contact {
+	margin-bottom: 0;
+	border-top:1px solid #ff5800;
+	
+}
+#contact label{
+	display:block;
+	margin:20px 0;
+	text-align:center;
+}
+#contact button{
+	border: 1px solid black;
+	border-radius: 3px;
+	width:20%;
+	text-align: center;
+}
+footer{
+	color:azure;
+	background-color:royalblue;
+	text-align:center;
+	height: 120px;
+	padding:32px 0;
+}
+footer p{
+	width:50%;
+	margin:0 auto;
+	border:1px solid black;
+	border-radius:10px;
+}
+
