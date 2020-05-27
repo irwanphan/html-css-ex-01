@@ -1,0 +1,199 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Ngoding itu ga sulit</title>
+	</head>
+	
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			font-family: "Century Gothic","sogoe UI","Tahoma","Geneva";
+			margin: 0px;
+			padding: 0px;
+		}
+
+		nav{
+			text-align: center;
+			position: fixed;
+			top: 0px;
+			background-color: rgba(255,255,255,0.8);
+			width: 100%;
+			z-index: 3;
+		}
+
+		nav ul{
+			list-style: none;
+			margin: 0px;
+			padding: 0px;
+		}
+
+		nav ul li{
+			display: inline-block;
+			padding: 8px 16px;
+			text-decoration: none;
+			color: #ff5800;
+		}
+
+		nav ul li a{
+			text-decoration: none;
+			color: #ff5800;
+		}
+
+		.container{
+			max-width: 840px;
+			margin: 0px auto;
+		}
+
+		div #hello{
+			background-color: deepskyblue;
+			height: 480px;
+		}
+
+		.banner{
+			overflow: hidden;
+			height: 100%;
+			position: relative;
+		}
+
+		small{
+			position: absolute;
+			left: 16px;
+			bottom: 16px;
+			color: ghostwhite;
+			z-index: 3;
+		}
+
+		.banner h1{
+			color: white;
+			background-color: rgba(0,0,0,0.7);
+			padding: 16px 32px;
+			display: inline-block;
+			position: absolute;
+			bottom: 60px;
+			z-index: 3;
+		}
+
+		#wrapper h2{
+			text-align: center;
+		}
+
+		#course article{
+			width: 33.33%;
+			padding: 16px;
+			display: table-cell;
+		}
+
+		#about{
+			text-align: center;
+		}
+
+		.identitas{
+			color: tomato;
+			font-size: 18px;
+		}
+
+		#about span{
+			display: block;
+		}
+
+		#course,#about,#contact{
+			padding: 40px 0px;
+		}
+
+		footer{
+			background-color: royalblue;
+			height: 120px;
+			text-align: center;
+			padding:32px 0px;
+			color: azure;
+		}
+
+	
+	</style>
+	
+	
+	
+<body>
+	<header>
+		<nav>
+			<ul>
+			<li><a href="#hello">Hello</a></li>
+			<li><a href="#course">Course</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	
+	<div class="container" id="wrapper">
+		<div id="hello">
+			<div class="banner">
+				<h1>ngoding itu gak susah</h1>		
+				<img src="assets/banner.jpg" width="840px" alt="gambar latar">			
+				<small>perlu dibiasakan aja</small>
+			</div>
+		</div>
+		<div id="course" >
+			<h2>Course yang telah diselesaikan</h2>
+		<article>
+			<h3>Machine Learning</h3>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+				Perferendis facere aut, at, distinctio nesciunt sequi delectus, 
+				quas molestiae nisi accusamus asperiores praesentium aperiam sint qui iusto facilis! Possimus, consectetur earum!
+			</p>
+		</article>
+		<article>
+			<h3>Predictive Analysis</h3>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus impedit quam eveniet. At reprehenderit animi vero, 
+				debitis consequatur in quam veritatis, ipsam praesentium, minus perferendis obcaecati? Ratione dolores fugit nam.
+			</p>
+		</article>		
+		<article>
+			<h3>Inclusive Design Pattern</h3>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, eos veritatis recusandae, vitae mollitia aspernatur quis
+				nesciunt incidunt culpa explicabo accusamus asperiores reprehenderit, officiis quos deleniti unde illum aut suscipit?
+			</p>
+		</article>
+		</div>
+	</div>
+	
+		<div id="about">
+		<h2>Tentang Saya</h2>
+		<span>Edy Gunawan, 17412144</span>
+			<p>Nama saya Edy Gunawan. Saya berasal dari kota Sambas, sebuah kota kecil yang terletak di Kalimantan Barat. Sekarang
+			sedang berusaha menyelesaikan study S1 di Widya Dharma Pontianak. Hobi saya mengedit sebuah video menjadi visual efek hanya saja
+			saya belum bisa. Di Pontianak saya bekerja di sebuah perusahaan yang bergerak di bidang otomotif. 
+			ini alamat email saya : afogunawan@gmail.com, Telp : +62 822 559 983 02  
+			</p>
+		<h2>Hubungi Saya</h2>
+		<span>afogunawan@gmail@gmail.com</span>
+		<span>082255998302</span>
+		<span>JL.Purnama 2 Gg. Usaha Bersama 2</span>
+	</div>
+
+	<div id="contact">
+		<h2>Kirim pesan ke saya</h2>
+		<form method="POST" action="#">
+		<label for="nama">
+		<input type="text" name="nama" id="nama" placeholder="Nama"></label>
+		<label for="email">
+		<input type="text" name="email" id="email" placeholder="Email"></label>
+		<label for="message">
+		<input type="text" name="message" id="message" placeholder="Message"></label>
+		<button type="submit">Kirim</button>	
+		</form>
+	</div>
+	<footer>
+		copyright hari ini,sudah pencapaian kecil
+	</footer>
+</body>
+</body>		
+</html>
