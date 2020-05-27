@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>ngoding itu ga sulit</title>
+</head>
+<style type="text/css">
+	body {
+		font-family: "Century Gothic","Segoe UI","Tahoma","Geneva";
+	}
+
+	nav { 
+		text-align: center;
+		position: fixed;
+		top: 0;
+		width: 100%; 
+		background-color: rgba(255,255,255,0.8);
+		z-index: 3;
+	}
+
+	nav ul {
+		padding: 0;
+		margin: 0;
+		
+	}
+
+	nav li {
+		list-style: none;
+		display: inline-block;
+		padding: 8px 16px 8px 16px;
+	}
+
+	nav li a {
+		text-decoration: none;
+		color: #ff5800;
+	}
+
+	.container {
+		max-width: 840px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#hello {
+		height: 480px;
+		background-color: deepskyblue;
+	}
+
+	#hello .banner {
+		overflow: hidden;
+		height: 100%;
+		position: relative;
+		z-index: 1;
+	}
+
+	.banner small {
+		position: absolute;
+		left: 16px;
+		bottom: 16px;
+		color: ghostwhite;
+		z-index: 2;
+	}
+
+	.banner h1 {
+		color: white;
+		background-color: black;
+		opacity: 70%;
+		padding: 16px 32px 16px 32px;
+		display: inline-block;
+		position: absolute;
+		margin: 360px 0px 60px 0px;
+	}
+
+	#wrapper h2 {
+		text-align: center;
+	}
+
+	#course, #about, #contact {
+		padding: 40px 0px 40px 0px;
+	}
+
+	#course article {
+		width: 33.33%;
+		padding: 16px;
+		display: table-cell;
+	}
+
+	#about {
+		text-align: center;
+	}
+
+	#about .identitas{
+		color: tomato;
+	}
+
+	form input, form textarea, form button {
+		width: 100%;
+		padding: 20px;
+		margin: 10px 0px 10px 0px;
+	}
+
+	form button {
+		background-color: royalblue;
+		border: 0px;
+		color: azure;
+		font-size: 15px;
+	}
+
+	footer {
+		background-color: royalblue;
+		height: 120px;
+		text-align: center;
+		padding: 32px 0px 32px 0px;
+	}
+
+	footer p {
+		color: azure; 
+	}
+</style>
+<body>
+	<nav>
+		<ul>
+			<li><a href="#hello">HELLO</a></li>
+			<li><a href="#course">COURSE</a></li>
+			<li><a href="#about">ABOUT</a></li>
+			<li><a href="#contact">CONTACT</a></li>
+		</ul>
+	</nav>
+		<div class="container" id="wrapper">
+			<div id="hello">
+				<div class="banner">
+					<h1>ngoding itu gak susah</h1>
+					<small>*perlu dibiasakan aja</small>
+					<img src="assets/banner.jpg" alt="gambar latar">
+				</div>
+			</div>
+			<div id="course">
+				<h2>"Course yang telah diselesaikan"</h2>
+				<article>
+					<h3>machine learning</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis facere aut, at, distinctio nesciunt sequi delectus, quas molestiae nisi accusamus asperiores praesentium aperiam sint qui iusto facilis! Possimus, consectetur earum!
+					</p>
+				</article>
+				<article>
+					<h3>predictive analysis</h3>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus impedit quam eveniet. At reprehenderit animi vero, debitis consequatur in quam veritatis, ipsam praesentium, minus perferendis obcaecati? Ratione dolores fugit nam.
+					</p>
+				</article>
+				<article>
+					<h3>inclusive design pattern</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, eos veritatis recusandae, vitae mollitia aspernatur quis nesciunt incidunt culpa explicabo accusamus asperiores reprehenderit, officiis quos deleniti unde illum aut suscipit?
+					</p>
+				</article>
+			</div>
+			<div id="about">
+				<h2>Tentang Saya</h2>
+				<span class="identitas" style="font-size: 18px;">
+					<strong>Rendi 17412163</strong>
+				</span>
+				<p>
+					Saya lahir di Pontianak dan sedang kuliah juga di Universitas Widya Dharma.
+					Saya mempunyai keterampilan dalam bidang Desain Grafis dan Fotografi.
+					Saya pernah juga ikut berpartisipasi dalam lomba Desain Grafis dan Fotografi pada saat saya duduk di bangku SMK.
+				</p>
+				<h2>Hubungi Saya</h2>
+				<span class="identitas" style="display: block;">Email : rendiwenly@gmail.com</span>
+				<span class="identitas" style="display: block;">Mobile : 082154------------</span>
+				<span class="identitas" style="display: block;">jl.purnama</span>
+			</div>
+			<div id="contact">
+				<h2>Kirim Pesan ke Saya</h2>
+				<form method="POST">
+					<label>Nama</label>
+					<input type="text" id="rendi" name="rendi" placeholder="Nama Lengkap" style="display: block;" required>
+
+					<label>Email</label>
+					<input type="email" id="email" name="email" placeholder="example@gmail.com" style="display: block;" required>
+
+					<label>Message</label>
+					<textarea id="message" name="message" placeholder="Write message here.." style="display: block;" required></textarea>
+
+					<center><button>KIRIM</button></center>
+				</form>
+			</div>
+		</div>
+	<footer>
+		<p>Copyright hari ini, sebuah pencapaian kecil</p>
+	</footer>
+</body>
+</html>
