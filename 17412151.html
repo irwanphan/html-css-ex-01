@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>ngoding itu ga sulit</title>
+	</head>
+
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: "Century Gothic", "segoe UI", "Tahoma", "Geneva";
+			margin: 0px;
+			padding: 0px; 
+		}
+
+		nav ul li {
+			display: inline-block;
+			padding: 8px 16px 8px 16px;
+			text-decoration: none;
+			color: #ff5800;
+		}
+
+		nav ul li a {
+			text-decoration: none;
+			color: #ff5800;
+		}
+
+		nav {
+			text-align: center;
+			position: fixed;
+			top: 0;
+			width: 100%;
+			background-color: rgba(255,255,255,0.8);
+			z-index: 3;
+		}
+
+		nav ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		.container {
+			max-width: 840px;
+			margin: 0px auto;
+		}		
+
+		#hello {
+			height: 480px;
+			background-color: deepskyblue;
+		}
+
+		.banner {
+			overflow: hidden;
+			height: 100%;
+			position: relative;
+		}
+
+		small {
+			position: absolute;
+			left: 16px;
+			bottom: 16px;
+			color: ghostwhite;
+			z-index: 3;
+		}
+
+		.banner h1 {
+			color: white;
+			background-color: rgba(0,0,0,0.7);
+			padding: 16px 32px;
+			display: inline-block;
+			position: absolute;
+			bottom: 60px;
+			z-index: 3;
+		}
+
+		#wrapper h2 {
+			text-align: center;
+		}
+
+		#course article{
+			width: 33.33%;
+			padding: 16px;
+			display: table-cell;
+		}
+
+		.identitas {
+			color: tomato;
+			font-size: 18px;
+
+		}
+
+		#about span {
+			display: block;
+		}
+
+		#about {
+			text-align: center;
+		}
+
+		#course,#about,#contact {
+			padding: 40px 0px;
+		}
+
+		footer {
+			background-color: royalblue;
+			height: 120px;
+			text-align: center;
+			padding: 32px 0px;
+			color: azure;
+		}
+
+		input[type=text],input[type=email] {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px	0;
+			border: 1px solid grey;
+			border-radius: 20px;
+		}
+
+		textarea {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px	0;
+			border: 1px solid grey;
+			border-radius: 30px;
+		}
+
+		button {
+			background-color: lightsteelblue;
+			color: black;
+			width: 100%;
+			padding: 10px 40px;
+			margin-top: 24px;
+			border: none;
+			border-radius: 2px;
+		}
+
+
+	</style>>
+		<body>
+			<nav>
+				<ul>
+					<li><a href="#hello">Hello</a></li>
+					<li><a href="#course">Course</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+
+				<div class="container" id="wrapper">
+					<div id="hello">
+						<div class="banner">
+							<h1>ngoding itu gak susah</h1>
+							<img src="C:\Users\Rtech\Documents\GitHub\html-css-ex-01\assets\banner.jpg" width="840px" alt="Gambar Latar">
+							<small>*perlu dibiasakan aja</small>
+						</div>	
+					</div>	
+
+					<div id="course">
+						<h2>Course yang Telah Diselesaikan</h2>
+						<article>
+							<h3>Machine Learning</h3>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis facere aut, at, distinctio nesciunt sequi delectus, quas molestiae nisi accusamus asperiores praesentium aperiam sint qui iusto facilis! Possimus, consectetur earum!</p>
+						</article>
+						<article>
+							<h3>Predictive Analysis</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus impedit quam eveniet. At reprehenderit animi vero, debitis consequatur in quam veritatis, ipsam praesentium, minus perferendis obcaecati? Ratione dolores fugit nam.</p>
+						</article>
+						<article>
+							<h3>Inclusive Design Pattern</h3>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, eos veritatis recusandae, vitae mollitia aspernatur quis nesciunt incidunt culpa explicabo accusamus asperiores reprehenderit, officiis quos deleniti unde illum aut suscipit?</p>
+						</article>
+					</div>
+
+					<div id="about">
+						<h2>Tentang Saya</h2>
+						<span class="identitas"><strong>Gerhana Aisyah, 17412151</strong></span>
+						<p>Nama saya Gerhana. Lengkapnya Gerhana Aisyah Goldy Hanie. Saya lahir dan besar di Pontianak. Saat ini saya bekerja sebagai Desainer Visual pada sebuah media di Pontianak. Saya membuat materi visual untuk media sosial tempat saya bekerja. Materi visual ini berupa web banner, greeting hari besar, promo program dll. Software atau platform yang biasa saya gunakan untuk membantu pekerjaan saya adalah  Adobe Illustrator dan Canva. gerhanagoldy@gmail.com, mobile: 083151829652</p>
+						<h2>Hubungi Saya</h2>
+						<span>gerhanagoldy@gmail.com</span>
+						<span>083151829652</span>
+						<span>Jalan HM Suwignyo</span>
+					</div>
+
+					<div id="contact">
+						<h2>Kirim Pesan Ke Saya</h2>
+						<form action="#" method="POST">
+							<label for="nama">Nama<input type="text" name="nama" id="nama" placeholder="Nama" required></label>
+							<label for="email">Email<input type="email" name="email" id="email" placeholder="Email" required></label>
+							<label for="message">Message<textarea name="message" id="message" placeholder="Message" required></textarea></label>
+							<button type="submit">Kirim</button>
+						</form>
+					</div>	
+				</div>
+			</div>
+
+			<footer>
+				<p>Copyright Hari Ini, Sebuah Pencapaian Kecil</p>
+			</footer>
+
+		</body>
+</html>
