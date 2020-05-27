@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>ngoding itu ga sulit </title>
+	</head>
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			font-family: "Century Gothic","sogoe UI","Tahoma","Geneva";
+			margin: 0px;
+			padding: 0px;
+		}
+
+		nav{
+			text-align: center;
+			position: fixed;
+			top: 0px;
+			background-color: rgba(255,255,255,0.8);
+			width: 100%;
+			z-index: 3;
+		}
+
+		nav ul{
+			list-style: none;
+			margin: 0px;
+			padding: 0px;
+		}
+
+		nav ul li{
+			display: inline-block;
+			padding: 8px 16px;
+			text-decoration: none;
+			color: #ff5800;
+		}
+
+		nav ul li a{
+			text-decoration: none;
+			color: #ff5800;
+		}
+
+		.container{
+			max-width: 840px;
+			margin: 0px auto;
+		}
+
+		div #hello{
+			background-color: deepskyblue;
+			height: 480px;
+		}
+
+		.banner{
+			overflow: hidden;
+			height: 100%;
+			position: relative;
+		}
+
+		small{
+			position: absolute;
+			left: 16px;
+			bottom: 16px;
+			color: ghostwhite;
+			z-index: 3;
+		}
+
+		.banner h1{
+			color: white;
+			background-color: rgba(0,0,0,0.7);
+			padding: 16px 32px;
+			display: inline-block;
+			position: absolute;
+			bottom: 60px;
+			z-index: 3;
+		}
+
+		#wrapper h2{
+			text-align: center;
+		}
+
+		#course article{
+			width: 33.33%;
+			padding: 16px;
+			display: table-cell;
+		}
+
+		#about{
+			text-align: center;
+		}
+
+		.identitas{
+			color: tomato;
+			font-size: 18px;
+		}
+
+		#about span{
+			display: block;
+		}
+
+		#course,#about,#contact{
+			padding: 40px 0px;
+		}
+
+		footer{
+			background-color: royalblue;
+			height: 120px;
+			text-align: center;
+			padding:32px 0px;
+			color: azure;
+		}
+
+	
+	</style>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#hello">Hello</a></li>
+				<li><a href="#course">Course</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="container" id="wrapper">
+		<div id="hello">
+			<div class="banner">
+				<h1>ngoding itu gak susah</h1>		
+				<img src="assets/banner.jpg" width="840px" alt="gambar latar">			
+				<small>perlu dibiasakan aja</small>
+			</div>
+		</div>
+		<div id="course">
+			<h2>Course yang telah diselesaikan</h2>
+		<article>
+			<h3>Machine Learning</h3>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+				Perferendis facere aut, at, distinctio nesciunt sequi delectus, 
+				quas molestiae nisi accusamus asperiores praesentium aperiam sint qui iusto facilis! Possimus, consectetur earum!
+			</p>
+		</article>
+		<article>
+			<h3>Predictive Analysis</h3>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus impedit quam eveniet. At reprehenderit animi vero, 
+				debitis consequatur in quam veritatis, ipsam praesentium, minus perferendis obcaecati? Ratione dolores fugit nam.
+			</p>
+		</article>		
+		<article>
+			<h3>Inclusive Design Pattern</h3>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, eos veritatis recusandae, vitae mollitia aspernatur quis
+				nesciunt incidunt culpa explicabo accusamus asperiores reprehenderit, officiis quos deleniti unde illum aut suscipit?
+			</p>
+		</article>
+		</div>
+	</div>
+
+	<div id="about">
+		<h2>Tentang Saya</h2>
+		<span>Andy Vandrea, 17412132</span>
+			<p>Nama saya Andy Vandrea , saya lahir di kota Pontianak pada 25 November 1999.
+			Saat ini saya sedang bekerja di konter HP pada bagian penjualan,dikonter tersebut menyediakan
+			jasa pulsa multichip di JL.Paris 1(PLanet Cell).Sekian dan terima kasih, andyvandrea25@gmail.com, mobile: +628 966 063 2123.  
+			</p>
+		<h2>Hubungi Saya</h2>
+		<span>andyvandrea25@gmail.com</span>
+		<span>089660632123</span>
+		<span>JL.Paris 1</span>
+	</div>
+
+	<div id="contact">
+		<h2>Kirim pesan ke saya</h2>
+		<form method="POST" action="#">
+		<label for="nama"><input type="text" name="nama" id="nama" placeholder="Nama"></label>
+		<label for="email"><input type="text" name="email" id="email" placeholder="Email"></label>
+		<label for="message"><input type="text" name="message" id="message" placeholder="Message"></label>
+		<button type="submit">Kirim</button>	
+		</form>
+	</div>
+	<footer>
+		copyright hari ini,sudah pencapaian kecil
+	</footer>
+</body>
+</html>
+
+
+
+<!--
+	rapikan bagian form :) validasi dan ingat placeholder
+-->
+
+
+
+<!--
+	kembali ke menu navigasi, agar menu navigasi lebih enak dilihat saat scroll
+	kita akan menambahkan warna latar putih transparan,
+	kita dapat menggunakan model RGBA, misalnya pada properti background-color
+	kita berikan nilai "rgba(255, 255, 255, 0.8)" yang berarti opacity dari warna
+	tersebut adalah 80%
+	setelah itu, agar garis bawah pada link tidak terlihat, properti text-decoration
+	akan kita beri nilai "none"
+	kemudian beri warna "#ff5800" pada linknya
+-->
+
+ <!--
+	 apabila ada yang janggal dalam design, perhatikan box model default 
+	 dan margin default pada body
+ -->
